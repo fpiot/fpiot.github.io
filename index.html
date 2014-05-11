@@ -61,31 +61,36 @@
 <p>Pros:<br>Cons:</p>
 
 <h3>
-<a name="hardware" class="anchor" href="#hardware"><span class="octicon octicon-link"></span></a>What hardware platform will support?</h3>
+<a name="hardware" class="anchor" href="#hardware"><span class="octicon octicon-link"></span></a>What hardware platform will be supported?</h3>
 
-<h4><a href="http://www.st.com/web/jp/catalog/tools/FM116/SC959/SS1532/PF252419">STM32F4DISCOVERY</a></h4>
+<h4><a href="http://en.wikipedia.org/wiki/ARM_Cortex-M">ARM Cortex-M</a></h4>
 <ul>
-<li>Spec / 32-bit ARM Cortex-M4, 192 kB RAM</li>
-<li>Ethernet / Optional DP83848 PHY board (<a href="http://blog.tkjelectronics.dk/2012/08/ethernet-on-stm32f4discovery-using-external-phy/">detail</a>)</li>
-<li>JTAG debugger / On-board ST-LINK/V2 (<a href="https://github.com/texane/stlink">detail</a>)</li>
-<li>Which language can use on? / Ajhc, ATS, Rust</li>
+<li>Spec: 32-bit,  RAM-size 1KiB~256KiB</li>
+<li>Debugger: <a href="http://www.st.com/web/en/catalog/tools/FM146/CL1984/SC724/SS1677/PF251168">ST-LINK/V2</a> (<a href="https://github.com/texane/stlink">detail</a>), <a href="https://mbed.org/handbook/CMSIS-DAP">CMSIS-DAP</a> (<a href="https://github.com/mbedmicro/pyOCD">detail</a>)</li>
+<li>Boards: <a href="http://mbed.org/platforms/mbed-LPC1768/">mbed LPC1768</a>, <a href="http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/PF252419">STM32F4DISCOVERY</a></li>
 </ul>
 
-<h4><a href="http://arduino.cc/en/Main/ArduinoBoardMega2560">Arduino Mega 2560</a></h4>
+<h4><a href="http://en.wikipedia.org/wiki/TI_MSP430">TI MSP430</a></h4>
 <ul>
-<li>Spec / 8-bit AVR ATmega2560, 8 kB RAM</li>
-<li>Ethernet / Optional Ethernet Shield (<a href="http://www.seeedstudio.com/wiki/Ethernet_Shield">detail</a>)</li>
-<li>JTAG debugger / Optional <a href="http://www.atmel.com/tools/avrdragon.aspx">AVR Dragon</a> (<a href="http://www.larsen-b.com/Article/315.html">detail</a>)</li>
-<li>Which language can use on? / ATS</li>
+<li>Spec: 16-bit,  RAM-size 128B~66KiB</li>
+<li>Debugger: T.B.D.</li>
+<li>Boards: T.B.D.</li>
+</ul>
+
+<h4><a href="http://en.wikipedia.org/wiki/Atmel_AVR">Atmel AVR</a></h4>
+<ul>
+<li>Spec: 8-bit, Harvard architecture, RAM-size 64B~16KiB</li>
+<li>Debugger: <a href="http://www.atmel.com/tools/avrdragon.aspx">AVR Dragon</a> (<a href="http://www.larsen-b.com/Article/315.html">detail</a>)</li>
+<li>Boards: <a href="http://arduino.cc/en/Main/ArduinoBoardMega2560">Arduino Mega 2560</a></li>
 </ul>
 
 <h3>
 <a name="how-use" class="anchor" href="#how-use"><span class="octicon octicon-link"></span></a>How to use?</h3>
 
 <ul>
-<li><a href="https://travis-ci.org/fpiot/arduino-mega2560-ats"><img src="https://travis-ci.org/fpiot/arduino-mega2560-ats.svg" alt="Build Status" style="max-width:100%;vertical-align:middle;"></a> <a href="https://github.com/fpiot/arduino-mega2560-ats">ATS programing on Arduino</a></li>
+<li><a href="https://travis-ci.org/fpiot/arduino-mega2560-ats"><img src="https://travis-ci.org/fpiot/arduino-mega2560-ats.svg" alt="Build Status" style="max-width:100%;vertical-align:middle;"></a> <a href="https://github.com/fpiot/arduino-mega2560-ats">ATS programing on Arduino (AVR)</a></li>
 <li><a href="https://travis-ci.org/fpiot/chibios-ats"><img src="https://travis-ci.org/fpiot/chibios-ats.svg" alt="Build Status" style="max-width:100%;vertical-align:middle;"></a> <a href="https://github.com/fpiot/chibios-ats">ATS programing on ChibiOS/RT</a></li>
-<li><a href="https://travis-ci.org/fpiot/mbed-ats"><img src="https://travis-ci.org/fpiot/mbed-ats.svg" alt="Build Status" style="max-width:100%;vertical-align:middle;"></a> <a href="https://github.com/fpiot/mbed-ats">ATS programing on mbed</a></li>
+<li><a href="https://travis-ci.org/fpiot/mbed-ats"><img src="https://travis-ci.org/fpiot/mbed-ats.svg" alt="Build Status" style="max-width:100%;vertical-align:middle;"></a> <a href="https://github.com/fpiot/mbed-ats">ATS programing on mbed (ARM Cortex-M)</a></li>
 </ul>
 
 <h3>
@@ -97,7 +102,6 @@
 <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h3>
 
 <ul>
-<li>Source code / TBD</li>
 <li>This page header photo / <a href="http://www.flickr.com/photos/emrank/3074491752/">Copyright (C) 2008 Emran Kassim All Rights Reserved.</a> Licensed under a <a href="http://creativecommons.org/licenses/by/2.0/">Creative Commons Attribution 2.0 Generic License</a>.</li>
 </ul>
       </section>
